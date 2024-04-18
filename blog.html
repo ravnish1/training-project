@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Creative Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      :root{
+      --themecolor:linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+      --bgcolor:rgba(246, 243, 229, 0.482);
+      }
+      body {
+        background-color:var(--bgcolor);
+        font-family: "poppins" , sans-serif;
+      }
+      nav{
+          width: 100%;
+          height: 100px;
+          background-image:var(--themecolor);
+          display: flex;
+          justify-content: space-between;
+      }
+      nav img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          background-color: var(--bgcolor);
+      }
+      nav ul{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          flex-shrink: 4;
+          gap: 20px;
+          text-decoration: none;
+          list-style: none;
+      }
+      nav a{
+          text-decoration: none;
+          color: black;
+          font-size: 1.2rem;
+          font-weight: 600;
+      }
+      nav div{
+          height: 100px;
+          background-color: var(--bgcolor);
+      }
+      nav li:hover{
+          color: rgb(10, 10, 10);
+          transition:300ms ease-in-out;
+          text-decoration: underline;
+          scale: 1.1;
+      }
+      header{
+        background-color: #003566;
+        color: white;
+        padding: 12px 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .container {
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .blog-post {
+        background-color: white;
+        padding: 20px;
+        border: 3px solid #313715;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transform to the transition */
+      }
+      .blog-post:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background-color: skyblue;
+        color: #d2d0ba #313715;
+      }
+      .set{
+        color: cadetblue;
+      }
+      .add{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .button{
+        text-align: center;
+        margin: 20px;
+      }
+      button{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      background-color: #e7c6ff;
+      border: 2px solid;
+      border-radius: 10px;
+      margin-top: 15px;
+      padding: 7px 10px;
+      }    
+      footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+      }
+      footer li {
+          list-style: none;
+          margin: 10px;
+      }
+      footer a{
+          text-decoration: none;
+          color: black;
+      }
+      footer img{
+          width: 100%;
+      }
+      footer div:nth-of-type(1){
+          margin: 30px;
+          width: 200px;
+      }
+      footer li:hover{
+          color: rgb(10, 10, 10);
+          transition:300ms ease-in-out;
+          text-decoration: underline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div><a href="./index.html"></a><img src="./assets/logo.png" alt="logo"></div>
+      <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./studyroom.html">STUDY ROOM</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="./about.html">ABOUT US</a></li>
+          <li><a href="./login.html">LOGIN/SIGN UP</a></li>
+      </ul>
+  </nav>
+    <header>
+      <h1>Study Spaces Blog</h1>
+    </header>
+
+    <div class="container">
+      <div class="blog-post">
+        <h2>BLOG 1</h2>
+        <p>Edutopia: Edutopia covers a wide range of educational topics, including online learning. They often feature articles and blog posts on effective strategies for online teaching, engagement techniques, and the use of technology in the virtual classroom.
+
+          The eLearning Coach: This blog is run by Connie Malamed, an eLearning expert. The blog covers various aspects of online learning, including instructional design, eLearning tools, and strategies for creating engaging online experiences.
+          
+          
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>BLOG 2</h2>
+        <p>TeachThought: TeachThought provides resources and insights for educators, including articles on online teaching and learning. They cover topics such as digital literacy, online assessment, and best practices for virtual instruction.
+
+          Faculty Focus: While not exclusively focused on online learning, Faculty Focus offers many articles and resources for college and university instructors, including tips for transitioning to online teaching, strategies for engaging students in virtual classrooms, and discussions on online course design.
+          
+          
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>BLOG 3</h2>
+        <p>EdSurge: EdSurge is a comprehensive education technology news and resource website. They regularly publish articles and blog posts on online learning trends, technology tools for educators, and insights into effective online teaching practices.
+
+          The Online Learning Blog by Study.com: This blog offers insights into online education trends, tips for online learners, and advice for educators transitioning to online teaching. They cover topics such as virtual classroom management, creating interactive online lessons, and optimizing online course content.
+          
+          
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>BLOG 4</h2>
+        <p>Inside Higher Ed: Inside Higher Ed covers higher education news and trends, including discussions on online learning. Their blog section often features articles on online education policy, innovative online teaching practices, and the future of virtual classrooms.
+
+          These blogs provide a wealth of information and resources for educators navigating the world of online teaching and learning. Whether you're new to online instruction or looking to enhance your existing practices, these blogs offer valuable insights and guidance
+        </p>
+      </div>
+    </div>
+    <div class="add">
+      <h1 class="set" style="text-align: center; ">ADD YOUR VIEWS</h1>
+      <label for="write">
+        <textarea id="message" name="message" placeholder="Write your views" rows="5" cols="50"></textarea>
+      </label>
+    </div>
+    <div class="button">
+     <button type="submit">SUBMIT</button>
+    </div>
+    <footer>
+      <div><a href="./index.html"></a><img src="./assets/logo.png" alt="logo"></div>
+      <div>
+          <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./studyroom.html">STUDY ROOM</a></li>
+              <li><a href="./blog.html">BLOG</a></li>
+              <li><a href="./about.html">ABOUT US</a></li>
+              <li><a href="./about.html">CONTACT US</a></li>
+              <li><a href="./login.html">LOGIN/SIGN UP</a></li>
+          </ul>
+      </div>
+  </footer>
+  </body>
+</html>

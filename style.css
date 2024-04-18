@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --themecolor:linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    --bgcolor:rgba(246, 243, 229, 0.482);
+}
+body{
+    font-family: "Poppins", sans-serif !important;
+    background-color:var(--bgcolor);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-image:var(--themecolor);
+    display: flex;
+    justify-content: space-between;
+}
+nav img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--bgcolor);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 4;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+nav div{
+    height: 100px;
+    background-color: var(--bgcolor);
+}
+nav li:hover{
+    color: rgb(10, 10, 10);
+    transition:300ms ease-in-out;
+    text-decoration: underline;
+    scale: 1.1;
+}
+.top{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    line-height: 1.2;
+    word-spacing: 2px;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+
+}
+
+.main-heading{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0px;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    color: #ff4d6d;
+    text-shadow:5px 3px 12px rgb(255 77 109 / 50%);
+   
+}
+.content{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 40%;
+}
+.video-content{
+    position: relative;
+    width:50%;
+
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.video-1 video{
+    border-radius: 10px;
+    border: 7px solid black;
+    
+}
+.video-1{
+    object-fit:fill;
+    overflow: hidden;
+    width: 80%;
+    margin: 10%; 
+    margin-left: 15%;
+}   
+.video-2{
+  
+    object-fit:fill;
+    overflow: hidden;
+    height: 300px;
+    width:40%;
+    position: absolute;
+    top: 150px;
+}
+.content h2{
+    font-size: 4rem;
+}
+.content p{
+    font-size: 1.5rem;
+}
+.content button{
+    width:max-content;
+    padding: 5px;
+    margin: 10px 0px;
+}
+.middle p{
+    margin-top: 15px;
+    width: 70%;
+
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    line-height: 1.2;
+    word-spacing: 2px;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+
+}
+.middle>h2 , .features>h2{
+    font-size: 2.5em;
+}
+.video-3-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.video-3{
+    height: 350px;
+    width: 80vw;
+    object-fit: cover;
+    border: 7px solid; 
+    border-radius: 10px;
+}
+.features{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.feature{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.feature img{
+    width: 110%;
+}
+.features >h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.feature:nth-of-type(1) div{
+    display: flex;
+    background-color: #efefd0;
+    flex-direction: row;
+    gap: 15px;
+    margin: 8px;
+    border: 3px solid; 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width:fit-content;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.feature:nth-of-type(1) i:nth-of-type(1){
+    background-color: #669bbc;
+    color: #ffbe0b;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 0.9em ;
+    border-radius: 10px;
+}
+.feature:nth-of-type(1) i:nth-of-type(2){
+    font-size: 2rem;
+}
+.feature h2{
+    margin: 14px 0px;
+}
+.feature p{
+    font-size: 1.1rem;
+    margin: 10px 0px;
+}
+.feature p span{
+    font-weight:bolder;
+}
+.last{
+    background-image:var(--themecolor);
+    font-weight: 700;
+    padding: 60px;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 2rem;
+}
+button a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+button{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: #e7c6ff;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 7px 10px;
+}
+button i{
+    font-size: 1.5rem;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+footer li {
+    list-style: none;
+    margin: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer img{
+    width: 100%;
+}
+footer div:nth-of-type(1){
+    margin: 30px;
+    width: 200px;
+}
+footer li:hover{
+    color: rgb(10, 10, 10);
+    transition:300ms ease-in-out;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+   .top{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+   }
+   .content{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 90%;
+    }
+    .video-content{
+        position: relative;
+        margin: 10% 3%;
+        align-self: center;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+    }
+    .video-1 video{
+        border-radius: 10px;
+        border: 7px solid black;
+    
+    }
+    .video-1{
+        object-fit:fill;
+        overflow: hidden;
+        width: 80%;
+        margin: 10%; 
+        margin-left: 15%;
+        position: relative;
+    }
+    .video-2{
+        object-fit:fill;
+        overflow: hidden;
+        height: 80%;
+        width:40%;
+        position: absolute;
+        top: 35%;
+        left: -10%;
+    }
+}
+@media screen and (max-width: 600px){
+    .features{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+   .feature{
+    width: 100%;
+    }
+}    

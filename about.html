@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Online Classroom</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  :root{
+    --themecolor:linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    --bgcolor:rgba(246, 243, 229, 0.482);
+  }
+  body{
+      font-family: "poppins", sans-serif !important;
+      background-color:var(--bgcolor);
+  }
+  
+  nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: #A9C9FF; */
+    background-image:var(--themecolor);
+    display: flex;
+    justify-content: space-between;
+}
+nav img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--bgcolor);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 4;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+nav div{
+    height: 100px;
+    background-color: var(--bgcolor);
+}
+nav li:hover{
+    color: rgb(10, 10, 10);
+    transition:300ms ease-in-out;
+    text-decoration: underline;
+    scale: 1.1;
+}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+
+  .header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-title {
+    text-align: center;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-text {
+    text-align: center;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    margin: 20px;
+    text-align: center;
+  }
+  .team-member-name {
+    font-weight: bold;
+  }
+  
+  .team-member-role {
+    font-style: italic;
+  }
+  
+  .values-list {
+    list-style: none;
+  }
+  
+  .value {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:#e7c6ff;
+  }
+  .value a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+  }  
+   .footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .team-member-img:hover{
+    transform:scale(1.2);
+  }
+  .team-member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+  }
+  i{
+    font-size: 1.3rem;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+footer li {
+    list-style: none;
+    margin: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer img{
+    width: 100%;
+}
+footer div:nth-of-type(1){
+    margin: 30px;
+    width: 200px;
+}
+footer li:hover{
+    color: rgb(10, 10, 10);
+    transition:300ms ease-in-out;
+    text-decoration: underline;
+}
+
+</style>
+<body>
+  <nav>
+    <div><a href="./index.html"></a><img src="./assets/logo.png" alt="logo"></div>
+    <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./studyroom.html">STUDY ROOM</a></li>
+        <li><a href="./blog.html">BLOG</a></li>
+        <li><a href="./about.html">ABOUT US</a></li>
+        <li><a href="./login.html">LOGIN/SIGN UP</a></li>
+    </ul>
+  </nav>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">About Us - Online Classroom</h1>
+    </div>
+  </header>
+
+  <section class="section mission-section">
+    <div class="container">
+      <h2 class="section-title">Our Mission</h2>
+      <p class="section-text">At Online Classroom, our mission is to provide high-quality online education accessible to everyone, anywhere. We believe in the power of education to transform lives and empower individuals to reach their full potential.</p>
+    </div>
+  </section>
+
+  <section class="section team-section">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="./assets/ravnish.jpg" alt="ravmish" class="team-member-img">
+          <h3 class="team-member-name">RAVNISH KUMAR</h3>
+          <p class="team-member-role">CSE 233093</p>
+          <button class="value">  <i class="fa-brands fa-linkedin"></i>    <a href="https://www.linkedin.com/in/ravnish-kumar/">RAVNISH</a>
+          </button>
+        </div>
+        <div class="team-member">
+          <img src="./assets/sujal.jpg" alt="sujal " class="team-member-img">
+          <h3 class="team-member-name">SUJAL KUMAR</h3>
+          <p class="team-member-role">CST 236031</p>
+          <button class="value">  <i class="fa-brands fa-linkedin"></i>     <a href="https://www.linkedin.com/in/sujal-kumar-95b723291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">SUJAL</a>  
+          </button>
+        
+        </div>
+        <div class="team-member">
+            <img src="./assets/kashish-image.jpg" alt="kashish" class="team-member-img">
+            <h3 class="team-member-name">KASHISH RAHEJA</h3>
+            <p class="team-member-role">CST 236018</p>
+            <button class="value">  <i class="fa-brands fa-linkedin"></i>    <a href="https://www.linkedin.com/in/kashish-raheja-693532275/">KASHISH</a></button>
+          </div>
+          <div class="team-member">
+            <img src="./assets/bhalla.jpn.jpg" alt="kusharg" class="team-member-img">
+            <h3 class="team-member-name">KUSHARG BALHA</h3>
+            <p class="team-member-role">CSE 233210</p>
+            <button class="value">  <i class="fa-brands fa-linkedin"></i>     <a href="https://www.linkedin.com/in/kusharg-balha-386916293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">KUSHARG</a></button>
+
+          </div>
+          <div class="team-member">
+            <img src="./assets/hrithik.jpg" alt="hritk" class="team-member-img">
+            <h3 class="team-member-name">HRITHIK KUMAR</h3>
+            <p class="team-member-role">CST 236018</p>
+            <button class="value">  <i class="fa-brands fa-linkedin"></i>     <a href="https://www.linkedin.com/in/hrithik-jakhar-183316304">HRITHIK</a></button>
+          </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div><a href="./index.html"></a><img src="./assets/logo.png" alt="logo"></div>
+    <div>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./studyroom.html">STUDY ROOM</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./about.html">CONTACT US</a></li>
+            <li><a href="./login.html">LOGIN/SIGN UP</a></li>
+        </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
